@@ -4,6 +4,8 @@ services:
   app:
     image: ryotafunaki/container-stable-diffusion-webui:latest
     restart: unless-stopped
+    ports:
+      - "7860:7860"
     deploy:
       resources:
         reservations:
@@ -12,6 +14,4 @@ services:
               count: 1
               capabilities:
                 - gpu
-    ports:
-      - "7860:7860"
     command: ["./webui.sh", "--server-name", "0.0.0.0"]

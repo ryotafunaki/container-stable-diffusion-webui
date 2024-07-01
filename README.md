@@ -1,16 +1,36 @@
-# Containers Template Repository
+# Stable Diffusion Web UI Container Repository
 
-This repository is a template for Containers.
+This repository is a Container for Stable Diffusion Web UI.
 
 ## Overview
 
 | Type | Summary |
 | --- | --- |
-| Base image and tags | base image name |
+| Base image and tags | nvidia/cuda:12.4.1-runtime-ubuntu22.04 |
 | Target platform | linux/x64, linux/arm64 |
-| Container registry's URL | https://hub.docker.com/r/owner/repository/ |
+| Container registry's URL | https://hub.docker.com/r/ryotafunaki/container-stable-diffusion-webui/ |
+
+## Requirements
+
+- Docker
+- NVIDIA CUDA on WSL2  
+  [Enable NVIDIA CUDA on WSL](https://learn.microsoft.com/ja-jp/windows/ai/directml/gpu-cuda-in-wsl)
 
 ## How to use
+
+1. Boot up the container.
+    ```bash
+    docker compose up -d
+    ```
+    Wait a few moments for the startup to complete.
+1. Access the Web UI.
+    ```bash
+    http://localhost:7860
+    ```
+1. Stop the container.
+    ```bash
+    docker compose down
+    ```
 
 > [!IMPORTANT]  
 > This image is a personal container.  
