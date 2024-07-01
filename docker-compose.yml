@@ -4,6 +4,8 @@ services:
   app:
     image: ryotafunaki/container-stable-diffusion-webui:latest
     restart: unless-stopped
+    tty: true
+    stdin_open: true
     deploy:
       resources:
         reservations:
