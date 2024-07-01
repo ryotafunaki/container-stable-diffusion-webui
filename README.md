@@ -27,6 +27,7 @@ This repository is a Container for Stable Diffusion Web UI.
     ```bash
     http://localhost:7860
     ```
+    See [Stable Diffusion Web UI](https://github.com/AUTOMATIC1111/stable-diffusion-webui).
 1. Stop the container.
     ```bash
     docker compose down
@@ -35,3 +36,4 @@ This repository is a Container for Stable Diffusion Web UI.
 > [!IMPORTANT]  
 > This image is a personal container.  
 > You can take a look at the Dockerfile and use it if you think it suits your use.
+
