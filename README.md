@@ -22,11 +22,10 @@ This repository is a Container for Stable Diffusion Web UI.
     ```bash
     docker compose up -d
     ```
+    Wait a few moments for the startup to complete.
 1. Access the Web UI.
-1. Add models and run inference.
-   ```bash
-    docker exec -it <container name> bash
-    ...
+    ```bash
+    http://localhost:7860
     ```
 1. Stop the container.
     ```bash

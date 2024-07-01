@@ -2,7 +2,7 @@
 # This source code is managed under the MIT license. See LICENSE in the project root.
 FROM nvidia/cuda:12.4.1-runtime-ubuntu22.04
 EXPOSE 7860
-ARG USER_NAME=developer
+ARG USER_NAME=user
 ARG USER_HOME=/home/${USER_NAME}
 
 # Install dependencies
