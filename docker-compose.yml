@@ -2,6 +2,16 @@
 # This source code is managed under the MIT license. See LICENSE in the project root.
 services:
   app:
-    image: hello-world:latest
-    container_name: hello-world
-    restart: none
+    image: ryotafunaki/container-stable-diffusion-webui:latest
+    restart: unless-stopped
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities:
+                - gpu
+    ports:
+      - "7860:7860"
+    command: ["./webui.sh", "--server-name", "0.0.0.0"]
