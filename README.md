@@ -6,7 +6,7 @@ This repository is a Container for Stable Diffusion Web UI.
 
 | Type | Summary |
 | --- | --- |
-| Base image and tags | nvidia/cuda:12.4.1-runtime-ubuntu22.04 |
+| Base image and tags | nvidia/cuda:12.5.0-runtime-ubuntu22.04 |
 | Target platform | linux/x64, linux/arm64 |
 | Container registry's URL | https://hub.docker.com/r/ryotafunaki/stable-diffusion-webui/ |
 
