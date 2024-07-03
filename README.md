@@ -17,17 +17,19 @@ This repository is a Container for Stable Diffusion Web UI.
 
 ## How to use
 
-1. Boot up the container.
+1.  Get docker-compose.yml from the GitHub repository.  
+    https://github.com/ryotafunaki/container-stable-diffusion-webui/
+1.  Boot up the container.
     ```bash
     docker compose up -d
     ```
     Wait a few moments for the startup to complete.
-1. Access the Web UI.
+1.  Access the Web UI.
     ```bash
     http://localhost:7860
     ```
     See [Stable Diffusion Web UI](https://github.com/AUTOMATIC1111/stable-diffusion-webui).
-1. Stop the container.
+1.  Stop and dispose the container.
     ```bash
     docker compose down
     ```
